@@ -562,7 +562,7 @@ if __name__ == "__main__":
     EmployeeUserName = input("Enter your Employee username: ")
     scan = input("Enter type of scan: \n1.File count\n2.File scan:  ")
     ops = input("Choose the type of OS of your Machine:\n1.Windows\n2. Linux\nEnter the option (W or L): ")
-    if scan == '1':
+    if scan == 'C' or scan=='c':
         print('***')
         print("Please Wait..... The Tool is now Scanning, For Data Files...")
         connection = None
@@ -578,7 +578,7 @@ if __name__ == "__main__":
         elapsed_time = end_time - start_time
         create_audit_table(connection, EmployeeUserName, ipaddrs, start_time, end_time, elapsed_time)
         connection.close()
-    elif scan == '2':
+    elif scan == 's' or scan=='S':
         if ops == 'W' or ops == 'w':
             windows()
 
