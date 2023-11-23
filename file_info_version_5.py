@@ -588,3 +588,4 @@ if __name__ == "__main__":
             print("Incorrect input")
     else:
         print("Incorrect input")
+canspirit
